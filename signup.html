@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #f4f4f4; }
+    form {
+      max-width: 320px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+    button {
+      background-color: black;
+      color: yellow;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    h2 { text-align: center; }
+    p { text-align: center; margin-top: 1rem; }
+  </style>
+  
+  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+  <script src="firebase_config.js"></script>
+  <script type="module" src="auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+  <!-- <script src="firebase-config.js"></script> -->
+  <script type="module" src="auth.js"></script>
+  <script src="firebase_config.js"></script>
+  <script>console.log("signup");</script>
+</head>
+<body>
+  <form>
+    <h2>Sign Up</h2>
+    <input type="email" id="signupEmail" placeholder="Email" required />
+    <input type="password" id="signupPassword" placeholder="Password" required />
+    <button type="button" id="signupBtn">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </form>
+
+
+</body>
+</html>
